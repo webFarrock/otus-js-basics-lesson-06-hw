@@ -1,0 +1,23 @@
+{
+  "name": "otus-js-basics-lesson-06-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webFarrock/otus-js-basics-lesson-06-hw.git"
+  },
+  "keywords": [],
+  "author": "Pavel Scheglov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webFarrock/otus-js-basics-lesson-06-hw/issues"
+  },
+  "homepage": "https://github.com/webFarrock/otus-js-basics-lesson-06-hw#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
