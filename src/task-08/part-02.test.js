@@ -11,16 +11,14 @@ describe('checks task №08 part №02', () => {
         console.log = log;
     });
 
-    /**
-     * тест несколько туповат - по сути таже программа что и тестируем,
-     * плюс может быть расхождение на момент запуска - тест проходит "на удачу"
-     *
-     * как еще это можно протестить - не придумал
-     */
-
     it("checks minutes from beginning of the day", () => {
-        const now = new Date();
-        const expectedResult = now.getHours() * 60 + now.getMinutes();
+
+        const hours = 3;
+        const minutes = 20;
+        const expectedResult = hours * 60 + minutes;
+
+        jest.useFakeTimers().setSystemTime(new Date(2021, 9, 10, hours, minutes, 5).getTime());
+
         outputMinutesFromDayBeginning();
         expect(console.log).toHaveBeenCalledWith(expectedResult);
     });
