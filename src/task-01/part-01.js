@@ -6,7 +6,7 @@ function multiplyOutput(a, b) {
     console.log(a * b);
 }
 
-module.exports = {
+export {
     sumOutput,
     multiplyOutput,
 };

@@ -7,4 +7,6 @@ const isTriangleRight = (a, b, c) => {
     return sorted[2] ** 2 === sorted[0] ** 2 + sorted[1] ** 2
 };
 
-module.exports = isTriangleRight;
+export {
+    isTriangleRight,
+};

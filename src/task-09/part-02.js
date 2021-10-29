@@ -23,7 +23,7 @@ function outputCircleLengthAndArea() {
     console.log(result.join(', '));
 }
 
-module.exports = {
+export {
     outputCircleLengthAndArea,
     INPUT_ERROR_MESSAGE,
 };

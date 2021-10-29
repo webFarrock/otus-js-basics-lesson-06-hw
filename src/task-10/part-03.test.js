@@ -1,4 +1,4 @@
-const isPhone = require('./part-03');
+import {isPhone} from './part-03';
 
 describe('checks task №10 part №03', () => {
     const log = console.log;

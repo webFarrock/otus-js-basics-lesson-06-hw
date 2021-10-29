@@ -1,4 +1,4 @@
-const outputMinutesFromDayBeginning = require('./part-02');
+import {outputMinutesFromDayBeginning} from './part-02';
 
 describe('checks task №08 part №02', () => {
     const log = console.log;

@@ -1,4 +1,4 @@
-const symbolsNumOutput = require('./part-02');
+import {symbolsNumOutput} from './part-02';
 
 describe('checks task №01 part №02', () => {
     const log = console.log;

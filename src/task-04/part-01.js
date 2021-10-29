@@ -24,7 +24,7 @@ function makeAdmin() {
     return admin;
 }
 
-module.exports = {
+export {
     makeAdmin,
     INPUT_ERROR_MESSAGE,
 };

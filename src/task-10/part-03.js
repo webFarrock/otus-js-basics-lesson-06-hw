@@ -6,4 +6,6 @@ function isPhone() {
 }
 
 
-module.exports = isPhone;
+export {
+    isPhone,
+};

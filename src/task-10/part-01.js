@@ -5,4 +5,6 @@ function isDate(){
 }
 
 
-module.exports = isDate;
+export {
+    isDate,
+};

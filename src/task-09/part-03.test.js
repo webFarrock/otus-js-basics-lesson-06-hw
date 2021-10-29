@@ -1,4 +1,4 @@
-const {quadraticEquation, INPUT_ERROR_MESSAGE, NO_SOLUTION} = require('./part-03');
+import {quadraticEquation, INPUT_ERROR_MESSAGE, NO_SOLUTION} from './part-03';
 
 describe('checks task №09 part №03', () => {
     const log = console.log;

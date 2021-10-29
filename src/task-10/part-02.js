@@ -5,4 +5,6 @@ function isEmail(){
 }
 
 
-module.exports = isEmail;
+export {
+    isEmail,
+};

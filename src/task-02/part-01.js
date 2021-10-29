@@ -1,5 +1,5 @@
-function outputMaxNum(a, b){
-    if(a > b){
+function outputMaxNum(a, b) {
+    if (a > b) {
         console.log(a);
         return;
     }
@@ -7,4 +7,6 @@ function outputMaxNum(a, b){
     console.log(b);
 }
 
-module.exports = outputMaxNum;
+export {
+    outputMaxNum,
+};

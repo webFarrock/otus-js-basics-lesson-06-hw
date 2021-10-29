@@ -1,4 +1,4 @@
-const outputMultTableFor7 = require('./part-02');
+import {outputMultTableFor7} from './part-02';
 
 describe('checks task №03 part №02', () => {
     const log = console.log;

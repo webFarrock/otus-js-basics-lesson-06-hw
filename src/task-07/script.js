@@ -80,7 +80,7 @@ const renderTextList = (textBlockEl, textList) => {
     });
 }
 
-module.exports = {
+export {
     initApp,
     textBlockId,
     inputId,

@@ -19,7 +19,7 @@ function outputAverage() {
     console.log(oddSum / oddCount);
 }
 
-module.exports = {
+export {
     outputAverage,
     INPUT_ERROR_MESSAGE,
 };

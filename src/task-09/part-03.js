@@ -41,7 +41,7 @@ function quadraticEquation() {
     console.log(`discriminant: ${discriminant}, quadraticRoots: ${quadraticRoots.join(', ')}`);
 }
 
-module.exports = {
+export {
     INPUT_ERROR_MESSAGE,
     NO_SOLUTION,
     quadraticEquation,

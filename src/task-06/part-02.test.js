@@ -1,4 +1,4 @@
-const isStringWithOneWord = require('./part-02');
+import {isStringWithOneWord} from './part-02';
 
 describe('checks task №06 part №02', () => {
     it("checks is string contain one word", () => {

@@ -21,7 +21,7 @@ function getYoungerDate(firstUserBirthDay, secondUserBirthDay) {
     }
 }
 
-module.exports = {
+export {
     INVALID_ARGUMENTS,
     getYoungerDate,
 };

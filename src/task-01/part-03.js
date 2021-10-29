@@ -11,7 +11,7 @@ function digitsSumOutput() {
     console.log(digitsSum);
 }
 
-module.exports = {
+export {
     digitsSumOutput,
     INPUT_ERROR_MESSAGE,
 };

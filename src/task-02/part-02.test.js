@@ -1,4 +1,4 @@
-const {outputMonthName, INPUT_ERROR_MESSAGE} = require('./part-02');
+import {outputMonthName, INPUT_ERROR_MESSAGE} from './part-02';
 
 describe('checks task №02 part №02', () => {
     const log = console.log;

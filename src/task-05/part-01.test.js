@@ -1,4 +1,4 @@
-const arrayElemSum = require('./part-01');
+import {arrayElemSum} from './part-01';
 
 describe('checks task №05 part №01', () => {
     const log = console.log;

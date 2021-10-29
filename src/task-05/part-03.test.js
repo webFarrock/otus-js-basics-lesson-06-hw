@@ -1,4 +1,4 @@
-const outputMaxElem = require('./part-03');
+import {outputMaxElem} from './part-03';
 
 describe('checks task №05 part №03', () => {
     it("checks max elem finded", () => {

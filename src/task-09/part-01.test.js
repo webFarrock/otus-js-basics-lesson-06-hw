@@ -1,4 +1,4 @@
-const isTriangleRight = require('./part-01');
+import {isTriangleRight} from './part-01';
 
 describe('checks task №09 part №01', () => {
     it("checks is triangle right", () => {

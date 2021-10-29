@@ -29,7 +29,7 @@ function outputWeekDayName() {
     }
 }
 
-module.exports = {
+export {
     INPUT_ERROR_MESSAGE,
     outputWeekDayName,
 };

@@ -1,4 +1,4 @@
-const {outputCircleLengthAndArea, INPUT_ERROR_MESSAGE} = require('./part-02');
+import {outputCircleLengthAndArea, INPUT_ERROR_MESSAGE} from './part-02';
 
 describe('checks task №09 part №02', () => {
     const log = console.log;

@@ -3,4 +3,6 @@ const arrayElemSum = items => {
     console.log(result);
 };
 
-module.exports = arrayElemSum;
+export {
+    arrayElemSum,
+};

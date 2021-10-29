@@ -1,4 +1,4 @@
-const {digitsSumOutput, INPUT_ERROR_MESSAGE} = require('./part-03');
+import {digitsSumOutput, INPUT_ERROR_MESSAGE} from './part-03';
 
 describe('checks task №01 part №03', () => {
     const log = console.log;

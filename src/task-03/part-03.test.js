@@ -1,4 +1,4 @@
-const {outputAverage, INPUT_ERROR_MESSAGE} = require('./part-03');
+import {outputAverage, INPUT_ERROR_MESSAGE} from './part-03';
 
 describe('checks task №03 part №03', () => {
     const log = console.log;

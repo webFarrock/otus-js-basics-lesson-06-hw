@@ -1,4 +1,4 @@
-const outputMaxNum = require('./part-01');
+import {outputMaxNum} from './part-01';
 
 describe('checks task №02 part №01', () => {
     const log = console.log;

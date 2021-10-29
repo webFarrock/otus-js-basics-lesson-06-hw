@@ -1,3 +1,3 @@
-import {initApp} from "./script";
-const appEl = document.createElement('app');
+import {initApp} from "./script.js";
+const appEl = document.getElementById('app');
 initApp(appEl);

@@ -25,7 +25,7 @@ function outputMonthName(a, b) {
     console.log(monthNames[monthNumber]);
 }
 
-module.exports = {
+export {
     outputMonthName,
     INPUT_ERROR_MESSAGE,
 };

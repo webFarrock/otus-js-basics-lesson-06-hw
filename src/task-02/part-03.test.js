@@ -1,4 +1,4 @@
-const isCircleInSquare = require('./part-03');
+import {isCircleInSquare} from './part-03';
 
 describe('checks task №02 part №03', () => {
     it('checks is circle in square', () => {

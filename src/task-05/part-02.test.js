@@ -1,4 +1,4 @@
-const arrayMultByTwo = require('./part-02');
+import {arrayMultByTwo} from './part-02';
 
 describe('checks task №05 part №02', () => {
     let input = [];

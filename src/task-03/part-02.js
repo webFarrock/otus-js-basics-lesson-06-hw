@@ -8,4 +8,6 @@ function outputMultTableFor7() {
     console.log(result.join("\n"));
 }
 
-module.exports = outputMultTableFor7;
+export {
+    outputMultTableFor7
+};

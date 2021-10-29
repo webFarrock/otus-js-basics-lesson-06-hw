@@ -1,4 +1,4 @@
-const pow = require('./part-03');
+import {pow} from './part-03';
 
 describe('checks task №06 part №03', () => {
     it("checks pow", () => {

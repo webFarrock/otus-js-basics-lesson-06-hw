@@ -1,4 +1,4 @@
-const {getYoungerDate, INVALID_ARGUMENTS} = require('./part-03');
+import {getYoungerDate, INVALID_ARGUMENTS} from './part-03';
 
 describe('checks task №08 part №03', () => {
     it("checks with correct arguments", () => {

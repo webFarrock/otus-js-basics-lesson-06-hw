@@ -1,4 +1,4 @@
-const isEmail = require('./part-02');
+import {isEmail} from './part-02';
 
 describe('checks task №10 part №02', () => {
     const log = console.log;

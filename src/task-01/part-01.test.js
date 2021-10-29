@@ -1,4 +1,4 @@
-const {sumOutput, multiplyOutput} = require('./part-01');
+import {sumOutput, multiplyOutput} from './part-01';
 
 describe('checks task №01 part №01', () => {
     const log = console.log;

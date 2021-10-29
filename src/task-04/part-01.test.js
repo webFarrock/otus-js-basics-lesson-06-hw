@@ -1,4 +1,4 @@
-const {makeAdmin, INPUT_ERROR_MESSAGE} = require('./part-01');
+import {makeAdmin, INPUT_ERROR_MESSAGE} from './part-01';
 
 describe('checks task №04 part №01', () => {
     const log = console.log;

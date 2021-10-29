@@ -8,4 +8,6 @@ function outputNumbersSumFrom50To100() {
     console.log(result);
 }
 
-module.exports = outputNumbersSumFrom50To100;
+export {
+    outputNumbersSumFrom50To100
+};

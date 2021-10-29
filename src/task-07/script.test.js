@@ -1,10 +1,4 @@
-const {
-    textBlockId,
-    inputId,
-    appendBtnId,
-    textListMaxLength,
-    initApp,
-} = require('./script')
+import {appendBtnId, initApp, inputId, textBlockId, textListMaxLength,} from './script';
 
 describe('initApp', () => {
     let appEl;

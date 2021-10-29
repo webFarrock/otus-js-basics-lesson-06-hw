@@ -1,4 +1,4 @@
-const isDate = require('./part-01');
+import {isDate} from './part-01';
 
 describe('checks task №10 part №01', () => {
     const log = console.log;

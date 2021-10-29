@@ -8,4 +8,6 @@ const isStringWithOneWord = input => {
     return input.split(' ').length === 1
 };
 
-module.exports = isStringWithOneWord;
+export {
+    isStringWithOneWord,
+};

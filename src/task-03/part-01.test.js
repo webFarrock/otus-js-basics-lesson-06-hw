@@ -1,4 +1,4 @@
-const outputNumbersSumFrom50To100 = require('./part-01');
+import {outputNumbersSumFrom50To100} from './part-01';
 
 describe('checks task №03 part №01', () => {
     const log = console.log;
