@@ -27,7 +27,7 @@ describe('initApp', () => {
         const paragraphsAfter = appEl.querySelectorAll(`#${textBlockId} p`);
         const hasAddedText = [...paragraphsAfter].find(item => item.innerText === text);
 
-        expect(paragraphsAfter.length).toBe(paragraphsBefore.length += 1);
+        expect(paragraphsAfter.length).toBe(paragraphsBefore.length + 1);
         expect(hasAddedText).toBeTruthy()
     });
 
