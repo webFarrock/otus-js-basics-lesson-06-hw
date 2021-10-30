@@ -5,9 +5,7 @@ function outputMultTableFor7() {
     result.push(`${num}x${i} = ${i * num}`);
   }
 
-  console.log(result.join('\n'));
+  console.log(result.join("\n"));
 }
 
-export {
-  outputMultTableFor7,
-};
+export { outputMultTableFor7 };

@@ -1,6 +1,6 @@
-import { isEmail } from './part-02';
+import { isEmail } from "./part-02";
 
-describe('checks task №10 part №02', () => {
+describe("checks task №10 part №02", () => {
   const { log } = console;
 
   beforeEach(() => {
@@ -11,15 +11,14 @@ describe('checks task №10 part №02', () => {
     console.log = log;
   });
 
-  it('checks user input on email', () => {
+  it("checks user input on email", () => {
     [
-      ['some@mail.ru', true],
-      ['facdfee78787@mail.ru', true],
-      ['some@mail', false],
-      ['!@@#%^^', false],
-
+      ["some@mail.ru", true],
+      ["facdfee78787@mail.ru", true],
+      ["some@mail", false],
+      ["!@@#%^^", false],
     ].forEach(([input, result]) => {
-      jest.spyOn(window, 'prompt').mockImplementation(() => input);
+      jest.spyOn(window, "prompt").mockImplementation(() => input);
 
       expect(isEmail()).toBe(result);
     });

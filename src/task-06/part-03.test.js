@@ -1,7 +1,7 @@
-import { pow } from './part-03';
+import { pow } from "./part-03";
 
-describe('checks task №06 part №03', () => {
-  it('checks pow', () => {
+describe("checks task №06 part №03", () => {
+  it("checks pow", () => {
     [
       [1, 10, 1],
       [100, 1, 100],

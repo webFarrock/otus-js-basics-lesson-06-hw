@@ -1,39 +1,39 @@
-const textBlockId = 'textList';
-const inputId = 'inputText';
-const appendBtnId = 'appendBtn';
+const textBlockId = "textList";
+const inputId = "inputText";
+const appendBtnId = "appendBtn";
 const textListMaxLength = 5;
 const textList = [
-  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-  'Eius officia quam suscipit vitae.',
-  'Blanditiis corporis illo mollitia nam neque unde vel!',
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  "Eius officia quam suscipit vitae.",
+  "Blanditiis corporis illo mollitia nam neque unde vel!",
 ];
 
 const createInput = (elId) => {
-  const el = document.createElement('input');
+  const el = document.createElement("input");
   el.id = elId;
-  el.type = 'text';
+  el.type = "text";
   return el;
 };
 
 const createTextBlock = (elId) => {
-  const el = document.createElement('div');
+  const el = document.createElement("div");
   el.id = elId;
   return el;
 };
 
 const createAppendBtn = (elId) => {
-  const el = document.createElement('button');
+  const el = document.createElement("button");
   el.id = elId;
-  el.innerText = 'Добавить';
+  el.innerText = "Добавить";
   return el;
 };
 
 const renderTextList = (textBlockEl, textListAr) => {
   const textBlock = textBlockEl;
-  textBlock.innerHTML = '';
+  textBlock.innerHTML = "";
 
   textListAr.forEach((item) => {
-    const el = document.createElement('p');
+    const el = document.createElement("p");
     el.innerText = item;
     textBlock.appendChild(el);
   });
@@ -51,7 +51,7 @@ const updateTextBlock = (appEl) => {
   }
 
   textList.push(inputEl.value);
-  inputEl.value = '';
+  inputEl.value = "";
 
   const textBlockEl = appEl.querySelector(`#${textBlockId}`);
 
@@ -69,13 +69,7 @@ const initApp = (appEl) => {
 
   renderTextList(textBlockEl, textList);
 
-  appendBtnEl.addEventListener('click', () => updateTextBlock(appEl));
+  appendBtnEl.addEventListener("click", () => updateTextBlock(appEl));
 };
 
-export {
-  initApp,
-  textBlockId,
-  inputId,
-  appendBtnId,
-  textListMaxLength,
-};
+export { initApp, textBlockId, inputId, appendBtnId, textListMaxLength };

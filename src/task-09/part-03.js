@@ -1,9 +1,10 @@
-const INPUT_ERROR_MESSAGE = 'a, b, c must be are nubmers';
-const NO_SOLUTION = 'There is no solution';
+const INPUT_ERROR_MESSAGE = "a, b, c must be are nubmers";
+const NO_SOLUTION = "There is no solution";
 
 function quadraticEquation() {
-  const input = prompt('Input numbers a, b, c separated with whitespace', '');
-  const inputArr = input.split(' ')
+  const input = prompt("Input numbers a, b, c separated with whitespace", "");
+  const inputArr = input
+    .split(" ")
     .map((item) => {
       if (!/^-?\d+$/.test(item)) {
         return false;
@@ -39,11 +40,11 @@ function quadraticEquation() {
     quadraticRoots.push((-b - Math.sqrt(discriminant)) / (2 * a));
   }
   // eslint-disable-next-line
-  console.log(`discriminant: ${discriminant}, quadraticRoots: ${quadraticRoots.join(', ')}`);
+  console.log(
+    `discriminant: ${discriminant}, quadraticRoots: ${quadraticRoots.join(
+      ", "
+    )}`
+  );
 }
 
-export {
-  INPUT_ERROR_MESSAGE,
-  NO_SOLUTION,
-  quadraticEquation,
-};
+export { INPUT_ERROR_MESSAGE, NO_SOLUTION, quadraticEquation };

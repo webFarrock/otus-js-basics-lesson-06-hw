@@ -1,6 +1,6 @@
-import { sumOutput, multiplyOutput } from './part-01';
+import { sumOutput, multiplyOutput } from "./part-01";
 
-describe('checks task №01 part №01', () => {
+describe("checks task №01 part №01", () => {
   const { log } = console;
 
   beforeEach(() => {
@@ -11,7 +11,7 @@ describe('checks task №01 part №01', () => {
     console.log = log;
   });
 
-  it('checks two numbers sum outputs into console', () => {
+  it("checks two numbers sum outputs into console", () => {
     [
       [1, 2, 3],
       [0, 0, 0],
@@ -24,7 +24,7 @@ describe('checks task №01 part №01', () => {
     });
   });
 
-  it('checks two numbers multiply outputs into console', () => {
+  it("checks two numbers multiply outputs into console", () => {
     [
       [1, 2, 2],
       [0, 0, 0],

@@ -1,6 +1,6 @@
-import { outputMaxNum } from './part-01';
+import { outputMaxNum } from "./part-01";
 
-describe('checks task №02 part №01', () => {
+describe("checks task №02 part №01", () => {
   const { log } = console;
 
   beforeEach(() => {
@@ -11,7 +11,7 @@ describe('checks task №02 part №01', () => {
     console.log = log;
   });
 
-  it('checks max number', () => {
+  it("checks max number", () => {
     [
       [1, 2, 2],
       [-1, -2, -1],

@@ -5,9 +5,7 @@ const isStringWithOneWord = (input) => {
     return false;
   }
 
-  return value.split(' ').length === 1;
+  return value.split(" ").length === 1;
 };
 
-export {
-  isStringWithOneWord,
-};
+export { isStringWithOneWord };

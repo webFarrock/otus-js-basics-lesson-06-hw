@@ -1,7 +1,7 @@
-import { outputMaxElem } from './part-03';
+import { outputMaxElem } from "./part-03";
 
-describe('checks task №05 part №03', () => {
-  it('checks max elem finded', () => {
+describe("checks task №05 part №03", () => {
+  it("checks max elem finded", () => {
     [
       [[], undefined],
       [[0, 0, 0], 0],

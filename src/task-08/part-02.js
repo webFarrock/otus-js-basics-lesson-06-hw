@@ -4,6 +4,4 @@ function outputMinutesFromDayBeginning() {
   console.log(result);
 }
 
-export {
-  outputMinutesFromDayBeginning,
-};
+export { outputMinutesFromDayBeginning };

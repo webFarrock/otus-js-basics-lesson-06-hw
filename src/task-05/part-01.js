@@ -3,6 +3,4 @@ const arrayElemSum = (items) => {
   console.log(result);
 };
 
-export {
-  arrayElemSum,
-};
+export { arrayElemSum };

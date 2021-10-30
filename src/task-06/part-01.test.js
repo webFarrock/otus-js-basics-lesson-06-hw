@@ -1,7 +1,7 @@
-import { numDiff } from './part-01';
+import { numDiff } from "./part-01";
 
-describe('checks task №06 part №01', () => {
-  it('checks diff between greater and less number', () => {
+describe("checks task №06 part №01", () => {
+  it("checks diff between greater and less number", () => {
     [
       [0, 0, 0],
       [-100, 10, 110],

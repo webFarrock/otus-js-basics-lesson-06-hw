@@ -1,6 +1,6 @@
-import { arrayElemSum } from './part-01';
+import { arrayElemSum } from "./part-01";
 
-describe('checks task №05 part №01', () => {
+describe("checks task №05 part №01", () => {
   const { log } = console;
 
   beforeEach(() => {
@@ -11,7 +11,7 @@ describe('checks task №05 part №01', () => {
     console.log = log;
   });
 
-  it('checks array elements sum', () => {
+  it("checks array elements sum", () => {
     [
       [[], 0],
       [[0], 0],

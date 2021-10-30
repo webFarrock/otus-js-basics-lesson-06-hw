@@ -1,7 +1,7 @@
-const INPUT_ERROR_MESSAGE = 'number must be greater than 0';
+const INPUT_ERROR_MESSAGE = "number must be greater than 0";
 
 function outputAverage() {
-  const num = Number(prompt('Input number greater than 0', null));
+  const num = Number(prompt("Input number greater than 0", null));
   let oddSum = 0;
   let oddCount = 0;
 
@@ -19,7 +19,4 @@ function outputAverage() {
   console.log(oddSum / oddCount);
 }
 
-export {
-  outputAverage,
-  INPUT_ERROR_MESSAGE,
-};
+export { outputAverage, INPUT_ERROR_MESSAGE };

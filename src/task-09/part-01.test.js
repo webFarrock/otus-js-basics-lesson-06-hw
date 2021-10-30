@@ -1,7 +1,7 @@
-import { isTriangleRight } from './part-01';
+import { isTriangleRight } from "./part-01";
 
-describe('checks task №09 part №01', () => {
-  it('checks is triangle right', () => {
+describe("checks task №09 part №01", () => {
+  it("checks is triangle right", () => {
     [
       [3, 4, 5, true],
       [5, 4, 3, true],

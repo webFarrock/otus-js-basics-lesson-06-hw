@@ -6,7 +6,4 @@ function multiplyOutput(a, b) {
   console.log(a * b);
 }
 
-export {
-  sumOutput,
-  multiplyOutput,
-};
+export { sumOutput, multiplyOutput };

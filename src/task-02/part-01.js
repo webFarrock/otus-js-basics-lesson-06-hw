@@ -7,6 +7,4 @@ function outputMaxNum(a, b) {
   console.log(b);
 }
 
-export {
-  outputMaxNum,
-};
+export { outputMaxNum };
