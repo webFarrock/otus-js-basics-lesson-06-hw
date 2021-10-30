@@ -3,87 +3,79 @@ const inputId = 'inputText';
 const appendBtnId = 'appendBtn';
 const textListMaxLength = 5;
 const textList = [
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'Eius officia quam suscipit vitae.',
-    'Blanditiis corporis illo mollitia nam neque unde vel!',
+  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+  'Eius officia quam suscipit vitae.',
+  'Blanditiis corporis illo mollitia nam neque unde vel!',
 ];
 
-const initApp = (appEl) => {
+const createInput = (elId) => {
+  const el = document.createElement('input');
+  el.id = elId;
+  el.type = 'text';
+  return el;
+};
 
-    const maxTextListLength = 5;
+const createTextBlock = (elId) => {
+  const el = document.createElement('div');
+  el.id = elId;
+  return el;
+};
 
-    const textBlockEl = createTextBlock(textBlockId);
-    const inputEl = createInput(inputId);
-    const appendBtnEl = createAppendBtn(appendBtnId);
+const createAppendBtn = (elId) => {
+  const el = document.createElement('button');
+  el.id = elId;
+  el.innerText = 'Добавить';
+  return el;
+};
 
-    appEl.appendChild(textBlockEl);
-    appEl.appendChild(inputEl);
-    appEl.appendChild(appendBtnEl);
+const renderTextList = (textBlockEl, textListAr) => {
+  const textBlock = textBlockEl;
+  textBlock.innerHTML = '';
 
-    renderTextList(textBlockEl, textList);
-
-    appendBtnEl.addEventListener('click', () => updateTextBlock(appEl));
-}
+  textListAr.forEach((item) => {
+    const el = document.createElement('p');
+    el.innerText = item;
+    textBlock.appendChild(el);
+  });
+};
 
 const updateTextBlock = (appEl) => {
-    const inputEl = appEl.querySelector(`#${inputId}`);
+  const inputEl = appEl.querySelector(`#${inputId}`);
 
-    if (!inputEl.value) {
-        return;
-    }
+  if (!inputEl.value) {
+    return;
+  }
 
-    if (textList.length >= textListMaxLength) {
-        textList.shift();
-    }
+  if (textList.length >= textListMaxLength) {
+    textList.shift();
+  }
 
-    textList.push(inputEl.value);
-    inputEl.value = '';
+  textList.push(inputEl.value);
+  inputEl.value = '';
 
-    const textBlockEl = appEl.querySelector(`#${textBlockId}`);
+  const textBlockEl = appEl.querySelector(`#${textBlockId}`);
 
-    renderTextList(textBlockEl, textList);
-}
+  renderTextList(textBlockEl, textList);
+};
 
-const createInput = (inputId) => {
-    const el = document.createElement('input');
-    el.id = inputId;
-    el.type = 'text';
-    return el;
-}
+const initApp = (appEl) => {
+  const textBlockEl = createTextBlock(textBlockId);
+  const inputEl = createInput(inputId);
+  const appendBtnEl = createAppendBtn(appendBtnId);
 
-const createTextBlock = (textBlockId) => {
-    const el = document.createElement('div');
-    el.id = textBlockId;
-    return el;
-}
+  appEl.appendChild(textBlockEl);
+  appEl.appendChild(inputEl);
+  appEl.appendChild(appendBtnEl);
 
-const createAppendBtn = (appendBtnId) => {
-    const el = document.createElement('button');
-    el.id = appendBtnId;
-    el.innerText = "Добавить";
-    return el;
-}
+  renderTextList(textBlockEl, textList);
 
-const createTextItem = (text) => {
-    const el = document.createElement('p');
-    el.innerText = text;
-    return el;
-}
-
-const renderTextList = (textBlockEl, textList) => {
-    textBlockEl.innerHTML = '';
-
-    textList.forEach(item => {
-        const el = document.createElement('p');
-        el.innerText = item;
-        textBlockEl.appendChild(el)
-    });
-}
+  appendBtnEl.addEventListener('click', () => updateTextBlock(appEl));
+};
 
 export {
-    initApp,
-    textBlockId,
-    inputId,
-    appendBtnId,
-    textListMaxLength,
-}
+  initApp,
+  textBlockId,
+  inputId,
+  appendBtnId,
+  textListMaxLength,
+};

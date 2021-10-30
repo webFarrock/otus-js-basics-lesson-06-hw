@@ -1,5 +1,5 @@
-const numDiff = (a, b) => a > b ? a - b : b - a;
+const numDiff = (a, b) => (a > b ? a - b : b - a);
 
 export {
-    numDiff,
+  numDiff,
 };

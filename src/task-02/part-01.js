@@ -1,12 +1,12 @@
 function outputMaxNum(a, b) {
-    if (a > b) {
-        console.log(a);
-        return;
-    }
+  if (a > b) {
+    console.log(a);
+    return;
+  }
 
-    console.log(b);
+  console.log(b);
 }
 
 export {
-    outputMaxNum,
+  outputMaxNum,
 };

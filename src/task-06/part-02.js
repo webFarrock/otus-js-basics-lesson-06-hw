@@ -1,13 +1,13 @@
-const isStringWithOneWord = input => {
-    input = input.trim();
+const isStringWithOneWord = (input) => {
+  const value = input.trim();
 
-    if (!input) {
-        return false;
-    }
+  if (!value) {
+    return false;
+  }
 
-    return input.split(' ').length === 1
+  return value.split(' ').length === 1;
 };
 
 export {
-    isStringWithOneWord,
+  isStringWithOneWord,
 };
