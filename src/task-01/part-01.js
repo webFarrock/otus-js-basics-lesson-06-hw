@@ -1,9 +1,9 @@
 function sumOutput(a, b) {
-  console.log(a + b + 1);
+  console.log(a + b);
 }
 
 function multiplyOutput(a, b) {
-  console.log(a * b * 2);
+  console.log(a * b);
 }
 
 export { sumOutput, multiplyOutput };
