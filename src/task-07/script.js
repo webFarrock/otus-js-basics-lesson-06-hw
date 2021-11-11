@@ -64,7 +64,7 @@ const initApp = (appEl) => {
   const inputEl = createInput(inputId);
   const appendBtnEl = createAppendBtn(appendBtnId);
 
-  inputEl.addEventListener("input", function (e) {
+  inputEl.addEventListener("input", function () {
     appendBtnEl.hidden = !this.value.trim();
   });
 
