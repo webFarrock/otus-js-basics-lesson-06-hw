@@ -25,6 +25,7 @@ const createAppendBtn = (elId) => {
   const el = document.createElement("button");
   el.id = elId;
   el.innerText = "Добавить";
+  el.hidden = true;
   return el;
 };
 
@@ -63,13 +64,20 @@ const initApp = (appEl) => {
   const inputEl = createInput(inputId);
   const appendBtnEl = createAppendBtn(appendBtnId);
 
+  inputEl.addEventListener("input", function (e) {
+    appendBtnEl.hidden = !this.value.trim();
+  });
+
   appEl.appendChild(textBlockEl);
   appEl.appendChild(inputEl);
   appEl.appendChild(appendBtnEl);
 
   renderTextList(textBlockEl, textList);
 
-  appendBtnEl.addEventListener("click", () => updateTextBlock(appEl));
+  appendBtnEl.addEventListener("click", function () {
+    updateTextBlock(appEl);
+    this.hidden = true;
+  });
 };
 
 export { initApp, textBlockId, inputId, appendBtnId, textListMaxLength };

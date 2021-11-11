@@ -21,7 +21,6 @@ describe("initApp", () => {
   it("creates basic markup", () => {
     expect(appEl.querySelector(`#${textBlockId}`)).toBeTruthy();
     expect(appEl.querySelector(`#${inputId}`)).toBeTruthy();
-    expect(appEl.querySelector(`#${appendBtnId}`)).toBeTruthy();
   });
 
   it("add text", () => {
@@ -58,5 +57,19 @@ describe("initApp", () => {
     const paragraphsAfter = appEl.querySelectorAll(`#${textBlockId} p`);
 
     expect(paragraphsBefore.length).toBe(paragraphsAfter.length);
+  });
+
+  it("button visibility only if input isn't empty", () => {
+    const inputEl = appEl.querySelector(`#${inputId}`);
+
+    expect(appEl.querySelector(`#${appendBtnId}`).hidden).toBeTruthy();
+
+    inputEl.value = "some text";
+    inputEl.dispatchEvent(new Event("input"));
+    expect(appEl.querySelector(`#${appendBtnId}`).hidden).toBeFalsy();
+
+    inputEl.value = "";
+    inputEl.dispatchEvent(new Event("input"));
+    expect(appEl.querySelector(`#${appendBtnId}`).hidden).toBeTruthy();
   });
 });
